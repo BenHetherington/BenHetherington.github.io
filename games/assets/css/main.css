@@ -1945,7 +1945,7 @@
 		-webkit-transition: background-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out;
 		transition: background-color 0.35s ease-in-out;
-		margin: 0 0.5em;
+		margin: 0.5em 0.5em 0 0.5em;
 	}
 
 		input[type="button"]:hover,
