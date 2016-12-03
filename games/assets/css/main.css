@@ -2221,6 +2221,7 @@
 
 			#main > section.one {
 				background-color: #091006;
+                background-image: url("../../images/banner-fallback.jpg");
 				background-image: filter(url("../../images/banner.jpg"), blur(10px));
 			}
 
