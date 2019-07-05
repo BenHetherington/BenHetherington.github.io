@@ -1578,18 +1578,18 @@
 		color: #888;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5, h6, .byline {
 		font-weight: 300;
 		color: #666;
 		line-height: 1.5em;
 	}
 
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .byline a {
 		color: inherit;
 		text-decoration: none;
 	}
 
-		h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
+		h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong, .byline a strong {
 			color: #333;
 		}
 
@@ -1628,13 +1628,19 @@
 		letter-spacing: -1px;
 	}
 
-		h2.alt {
+		h2.alt, .byline.alt {
 			color: #888;
 		}
 
-			h2.alt strong {
+			h2.alt strong, .byline.alt strong {
 				color: #666;
 			}
+
+	.byline {
+		font-size: 1em;
+		letter-spacing: 0px;
+		font-weight: 400;
+	}
 
 	h3 {
 		font-size: 1.5em;
@@ -1773,6 +1779,10 @@
 				margin: 0 auto;
 				width: auto;
 			}
+
+	.iconpad {
+		padding-right: 0.5em;
+	}
 
 /* List */
 
