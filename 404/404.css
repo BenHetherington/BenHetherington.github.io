@@ -67,7 +67,9 @@ body {
     transform: translate(-50%, -50%);
     mix-blend-mode: var(--background-blend-mode);
     overflow: hidden;
+}
 
+.animated {
     animation-name: colourfulanim, colourfulanimy, bgfade;
     animation-duration: 3s, 6s, 5s;
     animation-iteration-count: infinite, infinite, 1;
@@ -98,19 +100,19 @@ body {
 
 @keyframes colourfulanim {
     from {
-        left: -2.5pt;
+        transform: translateX(-3pt);
     }
     to {
-        left: 2.5pt;
+        transform: translateX(3pt);
     }
 }
 
 @keyframes colourfulanimy {
     from {
-        top: -2.5pt;
+        transform: translateY(-3pt);
     }
     to {
-        top: 2.5pt;
+        transform: translateY(3pt);
     }
 }
 
