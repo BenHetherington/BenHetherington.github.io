@@ -7,6 +7,29 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+:root {
+	/* Misc */
+	--z-index-base: 10000;
+	--active-colour: #5eb0ff;
+
+	/* Header */
+	--header-duration: 0.5s;
+	--header-size: 275px;
+	--header-bg-colour: #222629;
+
+	/* Text Colours */
+	--body-colour: #888;
+	--heading-colour: #666;
+	--link-hover-colour: #E27689;
+
+	/* Background Colours */
+	--body-background-colour: #dce3e2;
+	--section-two-colour: #f5fafa;
+	--section-three-colour: #ecf1f1;
+	--section-four-colour: #e8edec;
+	--footer-colour: var(--body-background-colour);
+}
+
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1545,12 +1568,12 @@
 /* Basic */
 
 	body {
-		background: #dce3e2;
+		background: var(--body-background-colour);
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: var(--body-colour);
 	}
 
 		body.is-loading * {
@@ -1563,12 +1586,12 @@
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: var(--body-colour);
 	}
 
 	h1, h2, h3, h4, h5, h6, .byline {
 		font-weight: 300;
-		color: #666;
+		color: var(--heading-colour);
 		line-height: 1.5em;
 	}
 
@@ -1617,11 +1640,11 @@
 	}
 
 		h2.alt, .byline.alt {
-			color: #888;
+			color: var(--body-colour);
 		}
 
 			h2.alt strong, .byline.alt strong {
-				color: #666;
+				color: var(--heading-colour);
 			}
 
 	.byline {
@@ -1648,7 +1671,7 @@
 
 	strong, b {
 		font-weight: 300;
-		color: #666;
+		color: var(--heading-colour);
 	}
 
 	em, i {
@@ -1664,8 +1687,8 @@
 	}
 
 		a:hover {
-			color: #E27689;
-			border-bottom-color: #E27689;
+			color: var(--link-hover-colour);
+			border-bottom-color: var(--link-hover-colour);
 		}
 
 	sub {
@@ -2002,7 +2025,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
+		background: var(--header-bg-colour) url("images/overlay.png");
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -2115,7 +2138,7 @@
 	#footer {
 		margin-left: 375px;
 		text-align: center;
-		background-color: #dce3e2;
+		background-color: var(--footer-colour);
 		padding: 3em 0 4em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
@@ -2191,15 +2214,15 @@
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				background-color: var(--section-two-colour);
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: var(--section-three-colour);
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: var(--section-four-colour);
 			}
 
 /* Wide */
@@ -2358,7 +2381,7 @@
 
 			#header {
 				backface-visibility: hidden;
-				transform: translateX(-275px);
+				transform: translateX(calc(var(--header-size) * -1));
 				transition: transform 0.5s ease;
 				-webkit-overflow-scrolling: touch;
 				display: block;
@@ -2367,9 +2390,8 @@
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
-				width: 275px;
-				z-index: 10002;
-				width: 275px;
+				width: var(--header-size);
+				z-index: calc(var(--z-index-base) + 2);
 				background: #222729 url("images/overlay.png");
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 			}
@@ -2403,7 +2425,7 @@
 				position: fixed;
 				top: 0;
 				width: 3.25em;
-				z-index: 10001;
+				z-index: calc(var(--z-index-base) + 1);
 			}
 
 				#headerToggle .toggle {
@@ -2440,11 +2462,11 @@
 					}
 
 			body.header-visible #main {
-				transform: translateX(275px);
+				transform: translateX(var(--header-size));
 			}
 
 			body.header-visible #headerToggle {
-				transform: translateX(275px);
+				transform: translateX(var(--header-size));
 			}
 
 			body.header-visible #header {
