@@ -43,10 +43,25 @@
 							-->
 							<ul>
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#fyp" id="fyp-link" class="skel-layers-ignoreHref"><span class="icon fa-circle-o">Finite Rhythm</span></a></li>
-								<li><a href="#gbc-rpg" id="gbc-rpg-link" class="skel-layers-ignoreHref"><span class="icon fa-gamepad">Game Boy RPG</span></a></li>
-								<li><a href="#dod" id="dod-link" class="skel-layers-ignoreHref"><span class="icon fa-arrows">Dungeon of Doom</span></a></li>
-								<li><a href="#judge" id="judge-link" class="skel-layers-ignoreHref"><span class="icon fa-gavel">Arduino Judge</span></a></li>
+								<hr>
+								<li class="nav-header">Projects</li>
+								<ul>
+									<li><a href="#fyp" id="fyp-link" class="skel-layers-ignoreHref"><span class="icon fa-circle-o">Finite Rhythm</span></a></li>
+									<li><a href="#hawkvr" id="hawkvr-link" class="skel-layers-ignoreHref"><span class="icon fa-tv">HawkVR</span></a></li>
+								</ul>
+								<hr>
+								<li class="nav-header">Experiments</li>
+								<ul>
+									<li><a href="#tetris3d" id="tetris3d-link" class="skel-layers-ignoreHref"><span class="icon fa-cubes">Tetris 3D</span></a></li>
+									<li><a href="#gbc-rpg" id="gbc-rpg-link" class="skel-layers-ignoreHref"><span class="icon fa-gamepad">Game Boy RPG</span></a></li>
+								</ul>
+								<hr>
+								<li class="nav-header">Small Projects</li>
+								<ul>
+									<li><a href="#dod" id="dod-link" class="skel-layers-ignoreHref"><span class="icon fa-arrows">Dungeon of Doom</span></a></li>
+									<li><a href="#judge" id="judge-link" class="skel-layers-ignoreHref"><span class="icon fa-gavel">Arduino Judge</span></a></li>
+								</ul>
+								<hr>
 								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
 							</ul>
 						</nav>
@@ -75,13 +90,18 @@
 							<header>
 								<h1 class="top-text">Ben Hetherington</h1>
 								<p class="top-text">Hello, world!<br />
-								I'm a Computer Science graduate from the University of Bath.<br />
-								Here's a portfolio of games-related projects I've worked on.</p>
+								I'm a software engineer, who's looking to get into the games industry.<br />
+								Here's a portfolio of games-related projects that I've worked on.</p>
 							</header>
 
 						</div>
 					</section>
 
+
+					<section class="outer">
+						<header class="heading">
+							<h2>Projects</h2>
+						</header>
 
 					<!-- Final Year Project -->
 						<section id="fyp" class="two">
@@ -90,13 +110,71 @@
 								<header>
 									<h2>Finite Rhythm</h2>
 									<div class="byline">A Rhythm-Action Game for Teaching Automata Theory</div>
+									<ul class="description">
+										<li>2019</li>
+										<li>Unity (C#, Cg/HLSL)</li>
+										<li>WebGL</li>
+										<li>University of Bath</li>
+									</ul>
 								</header>
 
-								<p>My dissertation project was to develop an educational game for teaching finite automata, a theoretical topic in Computer Science. To try something different, I challenged myself to teach through a rhythm-action game, backed by an original soundtrack that I wrote and recorded. Developed in Unity, and playable on the web.<br />
+								<p>My dissertation project was to develop an educational game for teaching finite automata, a theoretical topic in Computer Science. To try something different, I challenged myself to teach through a rhythm-action game, backed by an original soundtrack that I wrote and recorded. Developed in Unity, and playable on the web.</p>
 
-								<a href="../Finite-Rhythm/" class="button"><span class="fa fa-play iconpad"></span>Play in Browser</a></p>
+								<a href="../Finite-Rhythm/" class="button"><span class="fa fa-play iconpad"></span>Play in Browser</a>
 
 								<img class="image featured" src="images/fyp.jpg" alt="" />
+
+							</div>
+						</section>
+
+					<!-- HawkVR -->
+						<section id="hawkvr" class="three">
+							<div class="container">
+
+								<header>
+									<h2>HawkVR</h2>
+									<div class="byline">Sports Stats and Officiating Visualiation</div>
+									<ul class="description">
+										<li>2019-2021</li>
+										<li>Unreal (C++)</li>
+										<li>Windows</li>
+										<li>Hawk-Eye</li>
+									</ul>
+								</header>
+
+								<p>An Unreal-powered application visualises sport stats and officiating decisions in a virtual world, designed for TV broadcast. In addition to making changes for both Cricket and Tennis tournaments, I decoupled the distribution of maps from the software releases.</p>
+
+								<img class="image featured" src="images/hawkvr.jpg" alt="" />
+
+							</div>
+						</section>
+					</section>
+
+					<section class="outer">
+						<header class="heading">
+							<h2>Experiments</h2>
+						</header>
+
+					<!-- Tetris 3D -->
+						<section id="tetris3d" class="two">
+							<div class="container">
+
+								<header>
+									<h2>Tetris 3D</h2>
+									<div class="byline">A "Hack Day" Experiment in 3D Space</div>
+									<ul class="description">
+										<li>2020</li>
+										<li>Unity (C#), FMOD</li>
+										<li>Spatial Reality Display</li>
+										<li>Hawk-Eye Hack Day</li>
+									</ul>
+								</header>
+
+								<p>An experiment with Sony's <a href="https://www.sony.com/electronics/spatial-reality-display/elf-sr1">Spatial Reality Display</a>, a stereoscopic display with head-tracking, which presents a scene in a virtual box. This seemed well-suited to a 3D version of Tetris, as you can look around to see where there are gaps to be filled. This experimental project was developed over two days as part of a 'hack day' at work.</p>
+
+								<div class="yt" style="--aspect-ratio: 16/9;">
+									<iframe class="image featured" src="https://www.youtube-nocookie.com/embed/itHp1gN4nDQ?rel=0" allow="clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+								</div>
 
 							</div>
 						</section>
@@ -108,11 +186,18 @@
 
 								<header>
 									<h2>Game Boy Color RPG</h2>
+									<div class="byline">An Experiment in Retro Programming</div>
+									<ul class="description">
+										<li>2015-2017</li>
+										<li>Z80 Assembly</li>
+										<li>Game Boy Color</li>
+										<li>Personal Project</li>
+									</ul>
 								</header>
 
-								<p>A work-in-progress project, programmed from scratch in Z80 assembly. While it's not currently a playable game, the engine contains a basic sound engine, variable-width text display, <a href="https://github.com/mist64/pucrunch/pull/1/commits/fa7425819d9c18f42d5259a1360fb61d6e628107"></a>a fixed decompressor</a>, a basic overworld game loop, and more.<br />
+								<p>An experimental project, programmed from scratch while learning Z80 assembly. While this isn't a playable game, the engine contains a basic sound engine, variable-width text display, a fixed decompressor, a basic overworld game loop, and more.</p>
 							  <a href="https://github.com/BenHetherington/Foundations" class="button"><span class="fa fa-github iconpad"></span>View Repository</a><span></span>
-							  <a href="dl/Foundations.gbc.zip" class="button"><span class="fa fa-download iconpad"></span>Download ROM</a></p>
+							  <a href="dl/Foundations.gbc.zip" class="button"><span class="fa fa-download iconpad"></span>Download ROM</a>
 
 								<div class="row">
 									<div class="4u 12u$(mobile)">
@@ -136,6 +221,12 @@
 
 							</div>
 						</section>
+					</section>
+
+					<section class="outer">
+						<header class="heading">
+							<h2>Small Projects</h2>
+						</header>
 
 
 				<!-- Dungeon of Doom -->
@@ -144,13 +235,21 @@
 
 							<header>
 								<h2>Dungeon of Doom</h2>
+								<div class="byline">First-year Coursework</div>
+								<ul class="description">
+									<li>2016</li>
+									<li>Java (Swing)</li>
+									<li>Desktop platforms</li>
+									<li>University of Bath</li>
+								</ul>
 							</header>
 
 							<p>Created as part of my first-year Java programming coursework.
-							From the primitive command-line game that were initially given, I
+							From the primitive command-line game that was initially given, I
 						  added multiplayer (via networking), a graphical interface with
-							smooth animations, and a computer player.<br />
-						  <a href="dl/Dungeon Of Doom.zip" class="button"><span class="fa fa-download iconpad"></span>Download Source</a></p>
+							smooth animations, and a computer player.</p>
+
+						  <a href="dl/Dungeon Of Doom.zip" class="button"><span class="fa fa-download iconpad"></span>Download Source</a>
 
 							<div class="row">
 								<div class="4u 12u$(mobile)">
@@ -182,17 +281,27 @@
 
 								<header>
 									<h2>Arduino Judge</h2>
+									<div class="byline">A Game for Two Arduinos</div>
+									<ul class="description">
+										<li>2015</li>
+										<li>C</li>
+										<li>Arduino</li>
+										<li>University of Bath</li>
+									</ul>
 								</header>
 
 								<p>Created as part of my first-year systems architecture coursework.
-								Working together with a friend, we aimed to recreate the excitement of the original <cite><a href="http://www.mariowiki.com/Judge_%28Game_%26_Watch%29">Game &amp; Watch Judge</a></cite>, but through microgames that revolve around LEDs, piezo speakers, and LDRs.<br />
-							  <a href="https://github.com/BenHetherington/Arduino-Judge" class="button"><span class="fa fa-github iconpad"></span>View Repository</a></p>
+								Working together with a friend, we aimed to recreate the excitement of the original <cite><a href="https://game-watch.fandom.com/wiki/Judge">Game &amp; Watch Judge</a></cite>, but through microgames that revolve around LEDs, piezo speakers, and LDRs.</p>
 
-								<iframe class="mac-window-shadow" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Xz0x0zdZapw?rel=0" frameborder="0" allowfullscreen></iframe>
+								<a href="https://github.com/BenHetherington/Arduino-Judge" class="button"><span class="fa fa-github iconpad"></span>View Repository</a>
+								<div class="yt" style="--aspect-ratio: 16/9;">
+									<iframe class="image featured" src="https://www.youtube-nocookie.com/embed/Xz0x0zdZapw?rel=0" allowfullscreen></iframe>
+								</div>
 
 								<br /><footer class="disclaimer">Game &amp; Watch is a trademark of Nintendo.</footer>
 
 							</div>
+						</section>
 						</section>
 
 				<!-- About Me -->
@@ -203,7 +312,7 @@
 								<h2>About Me</h2>
 							</header>
 
-							<p>I’m a creative and conscientious Computer Scientist, who enjoys programming in a variety of languages to make projects happen. My two main passions are video games and music, and I am looking for an engaging role in order to launch my career in the games industry.</p>
+							<p>I’m a creative and conscientious software engineer, who enjoys programming in a variety of languages to make projects happen. My two main passions are video games and music, and I am looking for an engaging role in order to launch a career in the games industry.</p>
 
 						</div>
 					</section>
